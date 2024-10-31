@@ -1,0 +1,131 @@
+/* GLOBAL */
+
+h3{
+    font-size: 36px;
+    letter-spacing: -2px;
+    line-height: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+    font-family: 'inter';
+}
+
+h2{
+    font-size: 48px;
+    letter-spacing: -2px;
+    font-weight: 700;
+    margin-bottom: 95px;
+}
+
+.important{
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+}
+
+input{  
+    border-radius: 5px;
+    border: none;
+    padding: 16px 17px;
+    box-shadow: 2px 3px 4px 0px #00000073 inset;
+    font-weight: 700;
+    color: rgba(10, 10, 10, 0.7);
+
+}
+
+input::placeholder {
+    color: rgba(67, 198, 174, 0.4);
+    font-size: 16px;
+    font-weight: 700;
+    font-family: sen;
+}
+
+main{
+    padding-left: 156px;
+    padding-top: 40px;
+}
+
+h4{  
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* HEADER */
+
+.topnav {
+    background-color: #43C6AE;
+    padding: 20px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: inter;
+}
+
+.topnav input{
+    margin-left: 54px;
+}
+
+.topnav div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+  
+.topnav nav a {
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    padding-left: 34px;
+}
+
+
+/* MAIN */
+
+.iu{
+    display: inline-block;
+    font-family: inter;
+    font-weight: 700;
+    color: #43C6AE;
+    margin-bottom: 44px;
+}
+
+
+.info_auteur{
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    color: #7FB8D8;
+    font-family: inter;
+}
+
+.auteur{
+    color: #592EA9;
+    font-weight: 700;
+}
+
+section div div{
+    padding-top: 10px;
+}
+
+.contenue{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+}
+
+.liste{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    color: #43C6AE;
+}
