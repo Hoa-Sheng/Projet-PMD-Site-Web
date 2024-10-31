@@ -82,7 +82,7 @@ input::placeholder {
     color:#232536;
 }
 
-.part2{
+.Post_du_jour{
     background-color: #EFFFFF;
     padding: 80px; 
     display: flex;
@@ -91,7 +91,7 @@ input::placeholder {
 }
 
 
-.POST{
+.petit_titre{
     letter-spacing: 3px;
     margin-bottom: 23px;
 }
@@ -109,12 +109,12 @@ input::placeholder {
     font-weight: 700;
 }
 
-.part2 div{
+.Post_du_jour div{
     margin-right: 114px;
 }
 
 
-.part2 div div div{
+.Post_du_jour div div div{
     margin-bottom: 40px;
     margin-right: 114px;
     color: #6D6E76;
@@ -122,17 +122,14 @@ input::placeholder {
     line-height: 28px;
 }
 
-.part2 img{
+.Post_du_jour img{
     width: 515px;
     height: 359px;
 
 }
 
 .button_detail{
-    width: 215.96px;
-    height: 60.19px;
     padding: 16px 48px;
-    gap: 12px;
     border-radius: 4px;
     background-color: #36F1E6;
     border: none;
@@ -304,19 +301,19 @@ section{
 }
 
 @media screen and (max-width: 1200px){
-    .part2 img{
-        width: 215px;
-        height: 159px;
+    .Post_du_jour img{
+        position: absolute;
+        left: -999em;
     }
-    .part2{
+    .Post_du_jour{
         padding: 40px; 
         display: flex;
-        flex-direction: column;
+        flex-flow: column-reverse;
         align-items: center;
     }
     .button_categorie{
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
     }
     .h3{
         font-size: 16px;
@@ -332,9 +329,17 @@ section{
     }
     .categorie{
         flex-flow: column;
-    }ù
-    .detail{
-        position: absolute;
-        left: -999em;
     }
+    .button_categorie div {
+        margin:2rem
+    }
+    .post{
+        justify-content: center;
+        padding: 20px 20px;
+        margin: 30px;
+    }
+}
+
+@media screen and (max-width: 800px){
+
 }
