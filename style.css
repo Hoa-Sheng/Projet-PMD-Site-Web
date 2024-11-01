@@ -272,13 +272,14 @@ section{
     justify-content: center;
     margin-top: 45px;
     margin-bottom: 45px;
+    padding: 30px;
+    gap: 30px;
 }
 
 .newsletter p{
     font-size: 36px;
     font-weight: 700;
     letter-spacing: -2px;
-    padding: 30px;
 }
 
 .newsletter a{
@@ -286,7 +287,6 @@ section{
     border-radius: 5px;
     background-color: #7BDDD8;
     color: #232536;
-    margin:30px;
     font-size: 18px;
     font-weight: 700;
 }
@@ -341,5 +341,8 @@ section{
 }
 
 @media screen and (max-width: 800px){
-
+    .newsletter{
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
