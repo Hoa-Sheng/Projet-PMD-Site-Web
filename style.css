@@ -77,6 +77,92 @@ input::placeholder {
     padding-left: 34px;
 }
 
+
+.hamburger {
+	position: relative;
+	display: block;
+	width: 35px;
+	cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+	appearance: none;
+	background: none;
+	outline: none;
+	border: none;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 5px;
+	background-color: #FFF;
+	margin: 6px 0px;
+	transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+	transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+	transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+	opacity: 0;
+}
+
+.mobile-nav {
+	position: fixed;
+	top: 17%;
+	left: 100%;
+	width: 100%;
+	min-height: 100vh;
+	display: block;
+	z-index: 98;
+	background-color: #02A28F;
+	transition: 0.4s;
+}
+
+.mobile-nav.is-active {
+	left: 0;
+}
+
+.mobile-nav a {
+	display: block;
+	width: 100%;
+	max-width: 200px;
+	padding: 20px;
+	background-color: #02A28F;
+    font-family: Montserrat;
+	color: #FFF;
+	text-decoration: none;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.mobile-nav a:hover {
+	background-color: #02A28F;
+}
+
+.mobile-nav input{
+    width: 80%;
+    height: 56px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+@media (min-width: 1200px) {
+	.mobile-nav {
+		display: none;
+	}
+
+	.hamburger {
+		display: none;
+	}
+}
+
 .button_detail{
     font-weight: 700;
     color:#232536;
@@ -338,11 +424,35 @@ section{
         padding: 20px 20px;
         margin: 30px;
     }
-}
-
-@media screen and (max-width: 800px){
     .newsletter{
         flex-direction: column;
         align-items: flex-start;
+    }
+    .hamburger{
+        display: block; 
+    }
+    .topnav nav, .topnav input{
+        position: absolute;
+        left: -999em;
+    }
+    .post img{
+        width: 240px;
+        height: 150px;
+        margin-right: 31.95px;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .newsletter input{
+        width:60%;
+        padding: 20px 17px;
+    }
+    .newsletter{
+        height: 400px;
+    }
+    .bouton_inscription{
+        width: 40%;
+        padding: 10% 10%;
     }
 }

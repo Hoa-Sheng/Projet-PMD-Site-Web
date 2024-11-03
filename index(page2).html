@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="Reset-CSS.css" />
         <link rel="stylesheet" href="style(page2).css" />
+        <link rel="stylesheet" href="style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -20,15 +21,24 @@
         <header>
             <div class="topnav">
                 <a id="logo" href="index.html" title="Random Startup"><img src="C:\Users\Hoa\Documents\HTMLCSS\cours_pmd_integration_maquette\Images\Mini-image.png" alt="logo"></a>
-                <div>
+                <div class="container">
                     <nav>
                         <a href="index.html">Accueil.</a>
                         <a href="#about">À propos.</a>
                         <a href="#blog">Blog.</a>
                     </nav>
+                    <button class="hamburger">
+                        <div class="bar"></div>
+                    </button>
                     <input type="text" placeholder="Rechercher...">
                 </div>
             </div>
+            <nav class="mobile-nav">
+                <input type="text" placeholder="Rechercher...">
+                <a href="index.html">Accueil</a>
+                <a href="#about">À propos</a>
+                <a href="#blog">Blog</a>
+            </nav>
         </header>
         <main>
             <section>
@@ -54,39 +64,33 @@
                         </p>
                         <h4>Nos 5 conseils</h4>
                         <ol>
-                            <li>
-                                <span class="liste">Le sourire figé</span> : Parfaitement exécuté, 
+                            <li><span class="liste">1. Le sourire figé</span> : Parfaitement exécuté,
                                 il doit être large mais pas trop. Il doit dire : 
                                 “Je suis tellement passionné par ce tableau Excel”, 
                                 mais sans donner l’impression que vous cachez un léger malaise intérieur. 
                                 Conseil : entraînez-vous devant un miroir pour obtenir la juste dose de 
-                                fausse sincérité.
-                            </li>
-                            <li>
-                                <span class="liste">Le regard pétillant</span> : En réalité, c’est de la fatigue. 
+                                fausse sincérité.</li>
+                            <li><span class="liste">2. Le regard pétillant</span> : En réalité, c’est de la fatigue. 
                                 Mais avec une bonne dose de café et un peu de drops pour les yeux, 
                                 tout le monde pensera que vous êtes rempli d’une motivation débordante 
-                                (alors que vous êtes juste débordé).
-                            </li>
-                            <li>
-                                <span class="liste">Le hochement de tête enthousiaste</span>
+                                (alors que vous êtes juste débordé).</li>
+                            <li><span class="liste">3. Le hochement de tête enthousiaste</span>
                                 : Même quand vous n’avez rien compris en réunion, 
                                 hocher la tête avec un sourire suffira à vous faire passer pour un génie silencieux. 
-                                Les gens se diront : “Il est vraiment concentré !”
-                            </li>
-                            <li>
-                                <span class="liste">Les phrases positives vides</span>
+                                Les gens se diront : “Il est vraiment concentré !”</li>
+                            <li><span class="liste">4. Les phrases positives vides</span>
                                 : Apprenez à dire des choses comme : 
                                 “Je suis vraiment excité par ce projet”, 
                                 même quand il s’agit de trier des fichiers pour la 12e fois de la journée. 
-                                Le plus beau, c’est que personne n’ose douter de votre sincérité !
-                            </li>
-                            <li>
-                                <span class="liste">La posture engagée</span>
+                                Le plus beau, c’est que personne n’ose douter de votre sincérité !</li>
+                            <li><span class="liste">5. La posture engagée</span>
                                  : Penchez-vous légèrement vers votre écran comme si chaque e-mail 
-                                 était une nouvelle aventure. Qui aurait cru que répondre “OK, merci” pouvait paraître aussi passionnant ?
-                            </li>
+                                était une nouvelle aventure. Qui aurait cru que répondre “OK, merci” pouvait paraître aussi passionnant ?</li>
                         </ol>
+                        <div class="image_illustration">
+                            <img src="C:\Users\Hoa\Documents\HTMLCSS\cours_pmd_integration_maquette\Images\Je_suis_la_joie.png" alt="La_joie_se_lit_sur_mon_visage">
+                            <img src="C:\Users\Hoa\Documents\HTMLCSS\cours_pmd_integration_maquette\Images\Coworking.png" alt="ça_bosse_dur">
+                        </div>
                     </div>
             </section>
         </main>

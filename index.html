@@ -12,20 +12,32 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sen:wght@400..800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <div class="topnav">
                 <a id="logo" href="index.html" title="Random Startup"><img src="C:\Users\Hoa\Documents\HTMLCSS\cours_pmd_integration_maquette\Images\Mini-image.png" alt="logo"></a>
-                <div>
+                <div class="container">
                     <nav>
                         <a href="index.html">Accueil.</a>
                         <a href="#about">À propos.</a>
                         <a href="#blog">Blog.</a>
                     </nav>
+                    <button class="hamburger">
+                        <div class="bar"></div>
+                    </button>
                     <input type="text" placeholder="Rechercher...">
                 </div>
             </div>
+            <nav class="mobile-nav">
+                <input type="text" placeholder="Rechercher...">
+                <a href="index.html">Accueil</a>
+                <a href="#about">À propos</a>
+                <a href="#blog">Blog</a>
+            </nav>
             <div class="Post_du_jour">
                 <div>
                     <p class="petit_titre">POST DU JOUR.</p>
@@ -114,6 +126,7 @@
                 </div>
             </section>
         </main>
+        <script src="C:\Users\Hoa\Documents\HTMLCSS\cours_pmd_integration_maquette\Burger_icon.js"></script>
         <footer>
             <div class="pied_de_page">
                 <img src="C:\Users\Hoa\Documents\HTMLCSS\cours_pmd_integration_maquette\Images\Mini-image.png" alt="logo">
