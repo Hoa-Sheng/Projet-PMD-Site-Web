@@ -16,12 +16,12 @@ h4{
     font-family: inter;
     font-weight: 700;
     color: #43C6AE;
-    margin-bottom: 44px;
     white-space: normal;
     word-wrap: break-word;
 }
 
 .image_principal{
+    padding-top: 45px;
     padding-bottom: 20px;
     width: 85%;
     max-width: 1200px;
