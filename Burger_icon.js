@@ -3,7 +3,7 @@ window.onload = function () {
 	const mobile_menu = document.querySelector('.mobile_nav');
 
 	menu_btn.addEventListener('click', function () {
-		menu_btn.classList.add('is_active');
+		menu_btn.classList.toggle('is_active');
 		mobile_menu.classList.toggle('is_active');
 	});
 }

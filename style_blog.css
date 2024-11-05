@@ -17,11 +17,14 @@ h4{
     font-weight: 700;
     color: #43C6AE;
     margin-bottom: 44px;
+    white-space: normal;
+    word-wrap: break-word;
 }
 
 .image_principal{
     padding-bottom: 20px;
     width: 85%;
+    max-width: 1200px;
 }
 
 .section div{
@@ -29,18 +32,8 @@ h4{
     flex-direction: row;
 }
 
-.info_auteur{
-    margin-bottom: 40px;
-    display: flex;
-    flex-direction: row;
-    font-size: 14px;
-    color: #7FB8D8;
+.info_author{
     font-family: inter;
-}
-
-.auteur{
-    color: #592EA9;
-    font-weight: 700;
 }
 
 
@@ -53,16 +46,24 @@ h4{
 }
 
 
-.liste{
+.list{
     font-weight: 700;
     color: #43C6AE;
 }
 
 .image_illustration{
     display: flex;
-    height: 250px;
     padding: 60px 0px;
-    justify-content: space-between;
+    justify-content: center;
+    flex-flow: row;
+    gap: 15px;
+}
+
+.image_illustration_secondary{
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+
 }
 
 .conclusion{
@@ -85,7 +86,7 @@ h4{
     color: #592EA9;
 }
 
-.part1{
+.sub_section_articles{
     padding: 0px 0px 0px 70px;
     width: 1050px;
 }
@@ -103,8 +104,9 @@ h4{
     padding-right: 10px;
 }
 
-.articles_populaires{
-    width: 360px;
+.articles_popular{
+    width: 36%;
+    max-width: 380px;
 }
 
 h5{
@@ -166,21 +168,24 @@ h6{
 }
 
 @media screen and (max-width: 1200px){
-    .articles_populaires{
+    .articles_popular{
         position: absolute;
         left: -999em;
     }
 }
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 600px){
+    .sub_section_articles {
+        padding: 20px;
+    }
+    .section_articles{
+        padding: 5%
+    }
+}
+
+@media screen and (max-width: 1000px){
     .image_illustration{
         flex-direction: column;
-        width: 100%;
-        max-width: 250px;
-        height: auto;
-        gap: 20px;
-    }
-    .part1 {
-        padding: 20px;
+        align-items: center;
     }
 }

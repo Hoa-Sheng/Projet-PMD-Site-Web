@@ -178,12 +178,12 @@ input::placeholder {
 }
 
 
-.petit_titre{
+.little_title{
     letter-spacing: 3px;
     margin-bottom: 23px;
 }
 
-.info_auteur{
+.info_author{
     margin-bottom: 40px;
     display: flex;
     flex-direction: row;
@@ -191,7 +191,7 @@ input::placeholder {
     color: #7FB8D8;
 }
 
-.auteur{
+.author{
     color: #592EA9;
     font-weight: 700;
 }
@@ -338,11 +338,7 @@ section{
 
 /* Footer */
 
-.footer{
-    padding: 80px;
-
-}
-.pied_de_page{
+footer{
     background-color: #43C6AE;
     padding: 80px;
     color: #FFFFFF;
@@ -403,16 +399,10 @@ section{
         font-weight: 700;
         margin-bottom: 10px;
     }
-    section{
-        padding: 10% 0px;
-    }
     .topnav{
         padding: 20px 40px ;
     }
 
-    .button_categorie div {
-        margin:2rem
-    }
     .post{
         flex-direction: column;
         align-items: center;
@@ -435,9 +425,6 @@ section{
         height: auto;
         margin-right: 31.95px;
     }
-    .categorie{
-        justify-content: center;
-    }
     h2{
         padding-left: 5%;
     }
@@ -452,12 +439,13 @@ section{
     .newsletter{
         height: 400px;
     }
-    .bouton_inscription{
+    .button_inscription{
         width: 40%;
         padding: 10% 10%;
     }
-    .categorie{
-        flex-direction: column;
+    section{
+        padding: 80px 0px;
     }
+
 
 }
